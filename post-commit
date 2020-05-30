@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "the changes done"
+
+git push -u origin
+
+curl --user "admin:jenkins" http://192.168.99.103:8080/job/mlops-job1/build?token=redhat
